@@ -1,0 +1,33 @@
+digraph Tree {
+node [shape=box, fontname="helvetica"] ;
+edge [fontname="helvetica"] ;
+0 [label="checking_balance <= 0.0\ngini = 0.419\nsamples = 700\nvalue = [491, 209]\nclass = No"] ;
+1 [label="other_credit_none <= 0.5\ngini = 0.222\nsamples = 275\nvalue = [240, 35]\nclass = No"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="purpose_furniture/appliances <= 0.5\ngini = 0.423\nsamples = 46\nvalue = [32, 14]\nclass = No"] ;
+1 -> 2 ;
+3 [label="gini = 0.499\nsamples = 25\nvalue = [13, 12]\nclass = No"] ;
+2 -> 3 ;
+4 [label="gini = 0.172\nsamples = 21\nvalue = [19, 2]\nclass = No"] ;
+2 -> 4 ;
+5 [label="age <= 23.5\ngini = 0.167\nsamples = 229\nvalue = [208, 21]\nclass = No"] ;
+1 -> 5 ;
+6 [label="gini = 0.48\nsamples = 15\nvalue = [9, 6]\nclass = No"] ;
+5 -> 6 ;
+7 [label="gini = 0.13\nsamples = 214\nvalue = [199, 15]\nclass = No"] ;
+5 -> 7 ;
+8 [label="months_loan_duration <= 33.0\ngini = 0.484\nsamples = 425\nvalue = [251, 174]\nclass = No"] ;
+0 -> 8 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+9 [label="credit_history <= 3.5\ngini = 0.458\nsamples = 343\nvalue = [221, 122]\nclass = No"] ;
+8 -> 9 ;
+10 [label="gini = 0.431\nsamples = 302\nvalue = [207, 95]\nclass = No"] ;
+9 -> 10 ;
+11 [label="gini = 0.45\nsamples = 41\nvalue = [14, 27]\nclass = Yes"] ;
+9 -> 11 ;
+12 [label="employment_duration <= 1.5\ngini = 0.464\nsamples = 82\nvalue = [30, 52]\nclass = Yes"] ;
+8 -> 12 ;
+13 [label="gini = 0.0\nsamples = 7\nvalue = [7, 0]\nclass = No"] ;
+12 -> 13 ;
+14 [label="gini = 0.425\nsamples = 75\nvalue = [23, 52]\nclass = Yes"] ;
+12 -> 14 ;
+}
